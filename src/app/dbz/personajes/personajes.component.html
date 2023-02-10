@@ -1,0 +1,10 @@
+<h3>Personajes</h3>
+<hr>
+<ul>
+    <!--           
+        En personaje.poder | number, el pipe nos ayuda definir el tipo número y añade la coma 
+        después de las 3 unidades, esto lo proporciona angular directamente.
+        Los pipes sirven para transformar visualmente la información.
+    -->
+    <li *ngFor="let personaje of personajes">{{personaje.nombre}} - {{personaje.poder | number}}</li>
+</ul>

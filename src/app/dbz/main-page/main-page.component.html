@@ -1,0 +1,25 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+    <!-- 
+        De esta manera, estamos asociando la propiedad personajes que existe en el componente hijo con la
+        propiedad personajes que esta en el padre, con valores existentes, de esta manera el decorador @input
+        ayuda al paso de parametros. 
+    -->
+    <!--
+    Se retiro el paso de valores del componente padre al hijo. 
+    [personajes]="personajes"
+     -->
+        <app-personajes></app-personajes>
+    </div>
+
+    <div class="col">
+    <!-- 
+        Se remueve el evento que recibe la información de componente hijo al padre.
+        (onNuevoPersonaje)="agregarNuevoPersonaje($event)" 
+    -->
+        <app-agregar [nuevo]="nuevo"></app-agregar>
+    </div>
+</div>
